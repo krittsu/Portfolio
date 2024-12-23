@@ -1,0 +1,468 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+  
+
+body {
+    /* width : 90%; */
+    margin: auto;
+    padding: 0;
+    /* min-width: 600px; */
+    /* background-color: rgb(145, 145, 101); */
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: solid rgb(0, 0, 0) 1px; */
+    position: fixed;
+    left: 0;
+    height: 60px;
+    align-items: center;
+    z-index: 11;
+}
+
+header.scrolled {
+    border-bottom: solid rgb(108, 129, 123) 1px; /* Border when scrolled */
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li {
+    margin: auto 1.5px;
+    /* background-color: aqua; */
+    height: 60px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul li a {
+    text-decoration: none; 
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin: auto;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(108, 129, 123);
+    font-weight: 300;
+}
+
+.section:first-of-type {
+    /* background-color: aqua; */
+    margin: auto;
+    padding: 110px 50px 0px 50px;
+}
+
+.section {
+    /* background-color: aqua; */
+    margin: auto;
+    width: 80%;
+    padding: 0px 50px 30px 50px;
+}
+
+
+.section h1.name {
+    /* font-size: 5.5em; */
+    font-size:calc(1em + 400%);
+    font-weight: 400;
+    line-height: 0.8;
+    margin: auto;
+    color: rgb(108, 129, 123);
+    /* background-color: antiquewhite; */
+}
+
+.section h2.name-des {
+    font-size: calc(1em + 150%);
+    font-weight: 400;
+    line-height: 0.9;
+    margin: 20px 0px;
+    color: rgb(104, 104, 104);
+}
+
+#home p {
+    /* width: 90%; */
+    font-size: 1.1em;
+    font-weight: 350;
+    margin-top: 40px;
+}
+
+.link-btn {
+    display: inline-block;
+    background-color: rgb(206, 220, 213);
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: auto;
+    height: 50px;
+    width: 200px;
+    border-radius: 7px;
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+
+.link-btn:hover {
+    background-color: rgb(169, 192, 179);
+    cursor: pointer;
+}
+
+
+h2.section-title {
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 0.9;
+    margin: 0 0 10 0;
+    color: rgb(104, 104, 104);
+    
+}
+
+.ss-divide {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+
+.category {
+    /* background-color: #aa6262; */
+    width: 250px;
+    margin: 15px 0px;
+}
+
+.category-info {
+    /* background-color: #62aa8c; */
+    /* width: 600px; */
+    margin: 0px;
+    margin: 15px 0px;
+}
+.sub-info {
+    border-left: solid rgb(173, 173, 173) 1.5px;
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+.category-info h3 {
+    margin: 0px;
+    font-size: 1.7em;
+    font-weight: 400;
+    color: rgb(104, 104, 104);
+}
+
+.category-info ul {
+    padding: 0;
+}
+
+.category-info ul li{
+    margin: 10px 0px;
+    font-size: 1.3em;
+    font-weight: 350;
+    list-style: none;
+}
+
+
+#about {
+    padding-top: 50px;
+}
+
+.project-container {
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+    flex-wrap: wrap;
+    padding: 50px 0 0 0;
+    /* background-color: aquamarine; */
+}
+
+.project-card {
+    /* background-color: rgb(206, 220, 213); */
+    width: 31%;
+    min-width: 230px;
+    max-width: 330px;
+    height: 400px;
+    margin: 5px;
+    /* border-radius: 7px; */
+    border: solid white 1.5px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    /* cursor: pointer; */
+    border: solid rgb(173, 173, 173) 1.5px;
+}
+
+/* For project card */
+@media (max-width: 950px) {
+    .project-card {
+        width: 45%;
+    }
+    .project-container{
+        justify-content: center;
+    }
+}
+/* For project card */
+@media (max-width: 670px) {
+    .project-card {
+        /* justify-content: center;  */
+        /* flex: 1 1 30%; */
+        width: 100%;
+        /* min-width: 230px;
+        max-width: 330px; */
+        /* background-color: green; */
+    }
+}
+
+
+/* For header */
+@media (max-width: 700px) {
+    .section h1.name {
+        font-size: calc(2em + 150%);
+    }
+    .section h2.name-des {
+        font-size: calc(1em + 100%);
+    }
+    .category-info ul li{
+        margin: 5px 0px;
+        font-size: 1.1em;
+        font-weight: 350;
+        list-style: none;
+    }
+    .section-title {
+        font-size: calc(1em + 100%);
+    }
+}
+
+/* @media (max-width: 770px){
+    body {
+        background-color: aqua;
+    }
+} */
+
+@media (max-width: 470px) {
+    .section h1.name {
+        font-size: calc(2.5em + 150%);
+    }
+    .section h1.name span{
+        font-size: calc(0.7em);
+        position: relative;
+        top: -10px;
+    }
+    .section h2.name-des {
+        font-size: calc(0.8em + 80%);
+    }
+
+    nav {
+        display: none;
+    }
+
+    header {
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* border-bottom: solid rgb(0, 0, 0) 1px; */
+        position: fixed;
+        left: 0;
+        height: 60px;
+        align-items: center;
+        z-index: 11;
+    }
+    header.scrolled {
+        border-bottom: none; /* Border when scrolled */
+    }
+
+    /* header #nav-btn {
+        display: block;
+        
+    } */
+}
+
+/* #nav-btn {
+    background-color: blue;
+    height: 45px;
+    width: 45px;
+    display: none;
+    margin-right: 30px;
+    margin-top: 30px;
+
+    
+}
+
+.nav-btn-stp {
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    margin: 5px;
+} */
+
+
+
+
+.img-sample {
+    height: 65%;
+    background-color: rgb(206, 220, 213);
+    margin: 10px 10px;
+    position: relative; 
+    z-index: 10;
+    
+}
+.project-title {
+    margin: 5px 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: black;
+}
+
+.img-sample img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filter {
+    background-color: rgba(255, 255, 255, 0.87);
+    position: absolute;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+    align-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.project-card:hover .img-sample .filter{
+    display: block;
+    transition: 0.5s;
+}
+
+
+.filter .link-btn2 {
+    margin: auto;
+    background-color: rgb(147, 164, 159);
+    color: white;
+    text-align: center;
+    min-width: 130px;
+    max-width: 150px;
+    width: 60%;
+    font-size: 1em;
+    font-weight: 300;
+    height: 40px;
+    margin: 10px auto;
+    align-content: center;
+    border-radius: 100px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.filter .link-btn2:hover{
+    cursor: pointer;
+    background-color: rgb(108, 129, 123);
+
+}
+
+.project-label-container {
+    display: flex;
+    padding: 5px 0 5px 10px;
+}
+
+.project-label {
+    /* background-color: aqua; */
+    border: solid rgb(109, 109, 109) 1px;
+    display: block;
+    margin: 0 5px 0 0;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+    scroll-behavior: smooth;
+    }
+  }
+
+.contact-info {
+    width: 100%;
+    max-width: 700px;
+    /* margin: auto; */
+}
+
+#contact label, #contact legend {
+    /* width: 90%; */
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: 350;
+    display: block;
+}
+
+input {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid rgb(109, 109, 109) 1px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 15px;
+    height: 120px;
+    border-radius: 5px;
+    border: solid rgb(109, 109, 109) 1px;
+}
+
+#submit {
+    display: block;
+    background-color: rgb(206, 220, 213);
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: auto;
+    height: 50px;
+    width: 200px;
+    border-radius: 7px;
+    text-align: center;
+    align-content: center;
+    margin: 40px 0;
+    transition: 0.5s;
+    border: 0;
+}
+
+#submit:hover {
+    background-color: rgb(169, 192, 179);
+    cursor: pointer;
+}
+
+/* For submit button */
+@media (max-width: 875px) {
+    #submit {
+        margin: 40px auto;
+    }
+}

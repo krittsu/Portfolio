@@ -262,6 +262,7 @@ h2.section-title {
         font-size: calc(0.7em);
         position: relative;
         top: -10px;
+        font-weight: 500;
     }
     .section h2.name-des {
         font-size: calc(0.8em + 80%);
